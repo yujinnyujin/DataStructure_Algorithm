@@ -2,7 +2,7 @@ package chap01;
 
 import java.util.Scanner;
 
-public class Alternative1 {
+public class Alternative2 {
 
     public static void main(String[] args) {
         Scanner stdIn = new Scanner(System.in);
@@ -15,13 +15,13 @@ public class Alternative1 {
             n = stdIn.nextInt();
         }while(n <= 0);
 
-        for (int i = 0; i < n; i++) {
-            if(i % 2 == 0){
-                System.out.print("+");
-            }else{
-                System.out.print("-");
-            }
+        for (int i = 0; i < n / 2; i++) {
+            System.out.print("+-");
+        }
+
+        if(n % 2 !=0) {
+            System.out.print("+");
         }
     }
-
 }
+
